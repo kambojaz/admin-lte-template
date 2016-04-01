@@ -2,23 +2,24 @@
 
 use Illuminate\Support\ServiceProvider;
 use SleepingOwl\Admin\FormItems\FormItem;
+use SleepingOwl\AdminLteTemplate\FormItems\Code;
 
 class AdminLteTemplateServiceProvider extends ServiceProvider
 {
 
-	public function register()
-	{
+    public function register()
+    {
 
-        FormItem::register('code', 'AdminLteTemplate\FormItems\Code');
-	}
+        FormItem::register('code', 'SleepingOwl\AdminLteTemplate\FormItems\Code');
+    }
 
-	public function boot()
-	{
-		$this->loadViewsFrom(__DIR__ . '/../../views', 'admin-lte');
+    public function boot()
+    {
+        $this->loadViewsFrom(__DIR__ . '/../../views', 'admin-lte');
 
-		$this->publishes([
-			__DIR__ . '/../../../public/' => public_path('packages/sleeping-owl/admin-lte-template/'),
-		], 'assets-lte');
-	}
+        $this->publishes([
+            __DIR__ . '/../../../public/' => public_path('packages/sleeping-owl/admin-lte-template/'),
+        ], 'assets-lte');
+    }
 
 }

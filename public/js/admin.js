@@ -30,6 +30,15 @@ $(function ()
 	{
 		$('input[type="text"]:first').focus();
 	})();
+    
+    
+	// codeeditor init
+	(function ()
+	{
+        var flask = new CodeFlask;
+        flask.run('.code');
+        
+	})();
 
 
 });
