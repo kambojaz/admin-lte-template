@@ -15,6 +15,8 @@ class Template implements TemplateInterface
 		AssetManager::addStyle(asset('packages/sleeping-owl/admin-lte-template/css/custom.css'));
 		AssetManager::addStyle(asset('packages/sleeping-owl/admin-lte-template/css/dataTables.bootstrap.css'));
 		AssetManager::addStyle(asset('packages/sleeping-owl/admin-lte-template/plugins/iCheck/all.css'));
+		
+        AssetManager::addStyle(asset('packages/sleeping-owl/admin-lte-template/plugins/CodeFlask/codeflask.css'));
 
 		AssetManager::addScript(route('admin.lang'));
 		AssetManager::addScript('admin::default/js/jquery-1.11.0.js');
@@ -22,6 +24,8 @@ class Template implements TemplateInterface
 		AssetManager::addScript(asset('packages/sleeping-owl/admin-lte-template/js/app.js'));
 		AssetManager::addScript(asset('packages/sleeping-owl/admin-lte-template/js/admin.js'));
 		AssetManager::addScript(asset('packages/sleeping-owl/admin-lte-template/plugins/iCheck/icheck.min.js'));
+		
+        AssetManager::addScript(asset('packages/sleeping-owl/admin-lte-template/plugins/CodeFlask/codeflask.js'));
 	}
 
 	public function view($view)
