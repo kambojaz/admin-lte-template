@@ -9,7 +9,7 @@ class AdminLteTemplateServiceProvider extends ServiceProvider
 	public function register()
 	{
 
-        FormItem::register('code', 'App\ServiceModels\AdminFormItemMultiImages');
+        FormItem::register('code', 'AdminLteTemplate\FormItems\Code');
 	}
 
 	public function boot()
