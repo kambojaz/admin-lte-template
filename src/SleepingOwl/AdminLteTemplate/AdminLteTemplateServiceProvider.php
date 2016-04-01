@@ -1,6 +1,7 @@
 <?php namespace SleepingOwl\AdminLteTemplate;
 
 use Illuminate\Support\ServiceProvider;
+use SleepingOwl\Admin\FormItems\FormItem;
 
 class AdminLteTemplateServiceProvider extends ServiceProvider
 {
