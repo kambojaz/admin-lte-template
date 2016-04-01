@@ -1,6 +1,6 @@
 <?php 
 
-namespace SleepingOwl\Admin\FormItems;
+namespace AdminLteTemplate\FormItems;
 
 use SleepingOwl\Admin\FormItems\Textarea;
 
