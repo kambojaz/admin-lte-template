@@ -35,8 +35,14 @@ $(function ()
 	// codeeditor init
 	(function ()
 	{
-        var flask = new CodeFlask;
-        flask.run('.code');
+        
+        $('.code').each(function(i, item){
+           
+            var flask = new CodeFlask;
+            flask.run('#' + $(item).attr('id'));
+        });
+        
+       
         
 	})();
 
